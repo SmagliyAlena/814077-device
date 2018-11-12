@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Алёна Смаглий](https://up.htmlacademy.ru/htmlcss/23/user/814077).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 

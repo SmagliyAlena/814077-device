@@ -5,8 +5,164 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <header class="main-header">
+      <h1>Device</h1>
+         <!-- Здесь будет форма поиска -->
+         <ul class="user-navigation">
+         	<li><a href="login.html">Войти</a></li>
+         </ul>
+         <ul class="compare">
+         	<li><a href="compare.html">Сравнить</a></li>
+         </ul>
+         <ul class="cart">
+         	<li><a href="cart.html">Корзина</a></li>
+         </ul>
+         <nav class="main-navigation">
+         	<ul class="site-navigation">
+         		<li><a href="catalog.html">Каталог</a></li>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+         		<li><a href="delivery.html">Доставка</a></li>
+         		<li><a href="guarantee.html">Гарантия</a></li>
+         		<li><a href="contacts.html">Контакты</a></li>
+            </ul>
+         </nav>
+    </header>
+    
+    <main class="container">
+      <div class="ben-selfie">
+    	<img src="img/photo-1.jpg" alt="Палка для селфи" width="450" height="550">
+	    <b>Делай селфи, как Бен Стиллер!</b>
+	    <p>
+	    	Самая длинная палка для селфи доступна в нашем магазине. 
+	    	<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+	    </p>
+	        
+	    <table>
+	        <tr>
+	        	<th><a href="selfie-item">Подробнее</a></th>
+	        </tr>
+	        <tr>
+		        <td>Длина палки</td>
+		        <td>Вес палки</td>
+		        <td>Материал</td>
+	        </tr>
+	        <tr>
+	        	<td>8,5 м</td>
+	            <td>5 кг</td>
+	        	<td>Карбон</td>
+	        	</tr>
+	    </table>
+      </div>
+      <nav class="catalog-navigation">
+        <ul class="catalog-navigation-list">
+            <li><a href="virtual-list.html">Виртуальная реальность</a></li>
+            <li><a href="selfie-list.html">Моноподы для селфи</a></li>
+            <li><a href="action-cameras-list.html">Экшен-камеры</a></li>
+         	<li><a href="fitness-list.html">Фитнес-браслеты</a></li>
+         	<li><a href="smart-watches-list.html">Умные часы</a></li>
+         	<li><a href="quadcopters-list.html">Квадрокоптеры</a></li>
+         </ul>
+      </nav>
 
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+         <div class="features-list">
+            <button class="btn delivery-button">Доставка</button>
+            <!-- в лекции использовался пример с btn, но в критериях просят развернутые названия. Какой вариант верный? -->
+            <button class="btn guarantee-button">Гарантия</button>
+            <button class="btn credit-button">Кредит</button>
+        </div>
+        <ul class="features-list">
+         	<li class="feature-item">
+              <h3>Доставка</h3>
+         	  <p>
+         	   	Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+         	  </p>
+         	</li>
+
+         	<li class="feature-item">
+         		<h3>Гарантия</h3>
+         		<p></p>
+         	</li>
+
+         	<li class="feature-item">
+         		<h3>Кредит</h3>
+         		<p></p>
+         	</li>
+
+        </ul>
+       </section>
+
+         <div class="partners">
+            <!-- Изображения партнеров --> 
+         </div>
+         
+        <section class="about-us">
+           <h2>О нас</h2>
+	         <p>
+	         Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+	         </p>
+	         <p>
+	         Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+	         </p>
+	         <ul class="transport-companies">
+	         	<li>Деловые Линии</li>
+	         	<li>Автотрейдинг</li>
+	         	<li>ЖелДорЭкспедиция</li>
+	         </ul>
+	         <a href="about-us.html">Подробнее о нас</a>
+         </section>
+
+         <section class="contacts">
+         	<h2>Контакты</h2>
+         	<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы можете проверить работоспособность покупки. Всякое бывает.</p>
+         	<!-- форма с картой -->
+
+         	<button class="btn write-burron">Напишите нам</button>
+         </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-column footer-column-1">
+	        <b>Device</b>
+	        <p class="footer-contacts">
+	           г. Москва, ул. Строителей, 15
+	        </p>
+	        <hr>
+        </div>
+
+        <div class="footer-column footer-column-2">
+            <ul class="footer-features">
+	            <li><a href="delivery.html">Доставка</a></li>
+	         	<li><a href="guarantee.html">Гарантия</a></li>
+	         	<li><a href="contacts.html">Контакты</a></li>
+	        </ul>
+	        <ul>
+	         	<li><a class="social-button" href="#">Facebook</a></li>
+	         	<li><a class="social-button" href="#">Instagram</a></li>
+	         	<li><a class="social-button" href="#">Twitter</a></li>
+	        </ul>
+	    </div>
+
+        <div class="footer-column footer-column-3">
+			<ul class="footer-navigation">
+			    <li><a href="login.html">Войти</a></li>
+			</ul>
+			<ul class="footer-compare">
+			    <li><a href="compare.html">Сравнить</a></li>
+			</ul>
+			<ul class="footer-cart">
+			    <li><a href="cart.html">Корзина</a></li>
+			</ul>
+
+			<p>
+			   Тел.: +7(495)495-95-95 
+    		</p>
+			<p class="footer-copyright">
+			   <a class="html-academy-logo" href="https://htmlacademy.ru"></a>
+			</p>
+        </div>
+    </footer>
+      
   </body>
 </html>

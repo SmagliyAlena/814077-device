@@ -1,0 +1,334 @@
+@font-face {
+    font-family: "Gilroy-ExtraBold";
+    src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"),
+	   url("../fonts/web/gilroyextrabold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/web/opensans.woff2") format("woff2"),
+	   url("../fonts/web/opensans.woff") format("woff");
+    font-weight: 300;
+    font-style: normal; 
+}
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("../fonts/web/opensanslight.woff2") format("woff2"),
+	   url("../fonts/web/opensanslight.woff") format("woff");
+    font-weight: 800;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url("../fonts/web/gilroylight.woff2") format("woff2"),
+	   url("../fonts/web/gilroylight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Gilroy", "Open Sans", Sans;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    font-size: 18px;
+    line-height: 24px; 
+    color: #000000;
+
+    background-color: #f7e296;
+}
+
+.search-form {
+    font-size: 15px;
+    line-height: 30px; 
+    color: rgba(0, 0, 0, 0.3);
+}
+/* Кнопка не видна без фокуса
+.search-form button:not(:focus) {
+    display: none;
+}
+*/
+.search-form button{
+    outline: #000000 2px;
+    visibility: visible;
+}
+
+.search-form:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.search-form:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation,
+.site-navigation,
+.main-catalog-list {
+    list-style: none;
+}
+
+.user-navigation a {
+    color: #000000;
+    font-family: "OpenSans-Light";
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.user-navigation a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation a,
+.site-navigation a:visited {
+    color: #000000;
+    font-family: "Gilroy-ExtraBold";
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.site-navigation a:hover {
+    opacity: 0.5;
+}
+
+.site-navigation a:active {
+    opacity: 0.3;
+}
+
+.main-catalog-list a {
+    color: #000000;
+    font-family: "OpenSans-Light";
+    font-size: 15px;
+    line-height: 36px; 
+}
+
+.main-catalog-list a:hover {
+    opacity: 0.6;
+}
+
+.main-catalog-list a:active {
+    opacity: 0.3;
+}
+
+.slider {
+    background-color: #ffffff;
+}
+
+.slider b {
+    color: #000000;
+    font-family: "Gilroy-ExtraBold";
+    font-size: 47.5px;
+    line-height: 56px;
+    letter-spacing: 0.48px;
+}
+
+.slider p {
+    color: #464646;
+    font-family: "OpenSans-Light";
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+}
+
+.slider a {
+    color: #000000;
+    font-family: "Gilroy-ExtraBold";
+    font-size: 18.5px;
+    line-height: 23.5px;
+    letter-spacing: 3.7px;
+}
+
+tr.data-table {
+    color: #000000;
+    font-family: "Gilroy-Light";
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.36px; 
+}
+
+tr.head-table {
+    color: #464646;
+    font-family: "OpenSans-Light";
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.13px; 
+}
+
+.catalog-navigation li {
+    list-style: none;
+}
+
+.catalog-navigation-list a {
+    color: #000000;
+    font-family: "Gilroy-ExtraBold";
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.18px; 
+}
+
+.catalog-navigation-list a:hover,
+.catalog-navigation-list a:visited {
+    color: #000000;
+}
+
+.catalog-navigation-list a:active {
+    opacity: 0.3;
+}
+
+.features-list button {
+    font-family: "Gilroy-ExtraBold";
+    font-size: 18.5px;
+    letter-spacing: 3.7px; 
+    color: #f0c52e;
+
+    background-color: #000000;
+}
+
+.features-list h3 {
+    color: #000000;
+    font-family: "Gilroy-ExtraBold";
+    font-size: 47.5px;
+    line-height: 47.5px;
+    letter-spacing: 0.48px; 
+}
+
+.features-list li {
+    list-style: none;
+}
+
+.features-list p {
+    color: #464646;
+    font-family: "OpenSans-Light";
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.producers {
+    opacity: 0.2;
+}
+
+.about-us h2 {
+    color: #000000;
+    font-family: "Gilroy-ExtraBold";
+    font-size: 47.5px;
+    line-height: 47.5px;
+    letter-spacing: 0.48px; 
+}
+
+.about-us p {
+    color: #464646;
+    font-family: "OpenSans-Light";
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.transport-companies li{
+    color: #464646;
+    font-family: "OpenSans";
+    font-size: 15px;
+    line-height: 30px;
+
+    list-style: circle;
+}
+
+.yellow-btn {
+    font-family: "Gilroy-ExtraBold";
+    font-size: 18.5px;
+    line-height: 23.5px;
+    letter-spacing: 3.7px; 
+    color: #f0c52e;
+
+    background-color: #000000;
+}
+
+.contacts h2 {
+    color: #000000;
+    font-family: "Gilroy-ExtraBold";
+    font-size: 47.5px;
+    line-height: 47.5px;
+    letter-spacing: 0.48px; 
+}
+
+.contacts p {
+    color: #464646;
+    font-family: "OpenSans-Light";
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.write-button {
+    font-family: "Gilroy-ExtraBold";
+    font-size: 18.5px;
+    line-height: 23.5px;
+    letter-spacing: 3.7px; 
+    color: #f0c52e;
+
+    background-color: #000000;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-footer {
+    background-color: #464646;
+}
+
+.main-footer address {
+    color: #ffffff;
+    font-family: "OpenSans-Light";
+    font-size: 15px;
+    line-height: 30px;
+    font-style: normal;
+}
+
+.main-footer li {
+    list-style: none;
+}
+
+.footer-features a {
+    color: #ffffff;
+    font-family: "Gilroy-ExtraBold";
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 3.6px;
+}
+
+.footer-navigation a {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "OpenSans-Light";
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+}
+
+.footer-phone {
+    color: #ffffff;
+    font-family: "OpenSans-Light";
+    font-size: 15px;
+    line-height: 30px;
+}

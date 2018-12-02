@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Gilroy-ExtraBold";
+    font-family: "Gilroy";
     src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"),
 	   url("../fonts/web/gilroyextrabold.woff") format("woff");
     font-weight: 800;
@@ -10,19 +10,19 @@
     font-family: "OpenSans";
     src: url("../fonts/web/opensans.woff2") format("woff2"),
 	   url("../fonts/web/opensans.woff") format("woff");
-    font-weight: 300;
+    font-weight: 800;
     font-style: normal; 
 }
 @font-face {
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans";
     src: url("../fonts/web/opensanslight.woff2") format("woff2"),
 	   url("../fonts/web/opensanslight.woff") format("woff");
-    font-weight: 800;
+    font-weight: 300;
     font-style: normal; 
 }
 
 @font-face {
-    font-family: "Gilroy-Light";
+    font-family: "Gilroy";
     src: url("../fonts/web/gilroylight.woff2") format("woff2"),
 	   url("../fonts/web/gilroylight.woff") format("woff");
     font-weight: 300;
@@ -33,7 +33,7 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: "Gilroy", "Open Sans", Sans;
+    font-family: "Gilroy", "Arial", Sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -85,7 +85,8 @@ a {
 
 .user-navigation a {
     color: #000000;
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans";
+    font-weight: 300;
     font-size: 15px;
     line-height: 30px;
 }
@@ -98,16 +99,16 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.site-navigation a,
-.site-navigation a:visited {
+.site-navigation a {
     color: #000000;
-    font-family: "Gilroy-ExtraBold";
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
     font-size: 18px;
     line-height: 24px;
 }
 
 .site-navigation a:hover {
-    opacity: 0.5;
+    opacity: 0;
 }
 
 .site-navigation a:active {
@@ -116,7 +117,8 @@ a {
 
 .main-catalog-list a {
     color: #000000;
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans", "Arial", Sans-serif;
+    font-weight: 300;
     font-size: 15px;
     line-height: 36px; 
 }
@@ -135,15 +137,17 @@ a {
 
 .slider b {
     color: #000000;
-    font-family: "Gilroy-ExtraBold";
-    font-size: 47.5px;
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 47px;
     line-height: 56px;
     letter-spacing: 0.48px;
 }
 
 .slider p {
     color: #464646;
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans", "Arial", Sans-serif;
+    font-weight: 300;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.15px;
@@ -151,15 +155,17 @@ a {
 
 .slider a {
     color: #000000;
-    font-family: "Gilroy-ExtraBold";
-    font-size: 18.5px;
-    line-height: 23.5px;
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
     letter-spacing: 3.7px;
 }
 
 tr.data-table {
     color: #000000;
-    font-family: "Gilroy-Light";
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 300;
     font-size: 36px;
     line-height: 48px;
     letter-spacing: 0.36px; 
@@ -167,7 +173,8 @@ tr.data-table {
 
 tr.head-table {
     color: #464646;
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans", "Arial", Sans-serif;
+    font-weight: 300;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.13px; 
@@ -179,7 +186,8 @@ tr.head-table {
 
 .catalog-navigation-list a {
     color: #000000;
-    font-family: "Gilroy-ExtraBold";
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.18px; 
@@ -195,8 +203,9 @@ tr.head-table {
 }
 
 .features-list button {
-    font-family: "Gilroy-ExtraBold";
-    font-size: 18.5px;
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 18px;
     letter-spacing: 3.7px; 
     color: #f0c52e;
 
@@ -205,9 +214,10 @@ tr.head-table {
 
 .features-list h3 {
     color: #000000;
-    font-family: "Gilroy-ExtraBold";
-    font-size: 47.5px;
-    line-height: 47.5px;
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 47px;
     letter-spacing: 0.48px; 
 }
 
@@ -217,14 +227,24 @@ tr.head-table {
 
 .features-list p {
     color: #464646;
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans", "Arial", Sans-serif;
+    font-weight: 300;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.15px;
 }
 
 .visually-hidden {
-    visibility: hidden;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    white-space: nowrap;
+    border: 0;
+    clip-path: inset(100%);
 }
 
 .producers {
@@ -233,22 +253,25 @@ tr.head-table {
 
 .about-us h2 {
     color: #000000;
-    font-family: "Gilroy-ExtraBold";
-    font-size: 47.5px;
-    line-height: 47.5px;
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 47px;
     letter-spacing: 0.48px; 
 }
 
 .about-us p {
     color: #464646;
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans", "Arial", Sans-serif;
+    font-weight: 300;
     font-size: 15px;
     line-height: 30px;
 }
 
 .transport-companies li{
     color: #464646;
-    font-family: "OpenSans";
+    font-family: "OpenSans", "Arial", Sans-serif;
+    font-weight: 800;
     font-size: 15px;
     line-height: 30px;
 
@@ -256,9 +279,10 @@ tr.head-table {
 }
 
 .yellow-btn {
-    font-family: "Gilroy-ExtraBold";
-    font-size: 18.5px;
-    line-height: 23.5px;
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
     letter-spacing: 3.7px; 
     color: #f0c52e;
 
@@ -267,23 +291,26 @@ tr.head-table {
 
 .contacts h2 {
     color: #000000;
-    font-family: "Gilroy-ExtraBold";
-    font-size: 47.5px;
-    line-height: 47.5px;
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 47px;
     letter-spacing: 0.48px; 
 }
 
 .contacts p {
     color: #464646;
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans", "Arial", Sans-serif;
+    font-weight: 300;
     font-size: 15px;
     line-height: 30px;
 }
 
 .write-button {
-    font-family: "Gilroy-ExtraBold";
-    font-size: 18.5px;
-    line-height: 23.5px;
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
     letter-spacing: 3.7px; 
     color: #f0c52e;
 
@@ -300,7 +327,8 @@ tr.head-table {
 
 .main-footer address {
     color: #ffffff;
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans", "Arial", Sans-serif;
+    font-weight: 300;
     font-size: 15px;
     line-height: 30px;
     font-style: normal;
@@ -312,7 +340,8 @@ tr.head-table {
 
 .footer-features a {
     color: #ffffff;
-    font-family: "Gilroy-ExtraBold";
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 3.6px;
@@ -320,7 +349,8 @@ tr.head-table {
 
 .footer-navigation a {
     color: rgba(255, 255, 255, 0.7);
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans", "Arial", Sans-serif;
+    font-weight: 300;
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0.15px;
@@ -328,7 +358,130 @@ tr.head-table {
 
 .footer-phone {
     color: #ffffff;
-    font-family: "OpenSans-Light";
+    font-family: "OpenSans", "Arial", Sans-serif;
+    font-weight: 300;
     font-size: 15px;
     line-height: 30px;
+}
+
+.breadcrumbs li {
+    font-family: "OpenSans", "Arial", Sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    list-style: none;
+}
+ 
+.breadcrumbs a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:active {
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.filter h2{
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 3px; 
+    color: #000000;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section.filter {
+    background-color: #dbdbdb;
+}
+form.filter fieldset {
+    border: 0;
+} 
+
+.filter-button {
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 3.7px; 
+    color: #000000;
+
+    background-color: #f0c52e;
+}
+
+.sort {
+    background-color: #dbdbdb;
+}
+
+.sort h2 {
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 3px; 
+    color: #000000;
+}
+
+.sort button {
+    font-family: "OpenSans", "Arial", Sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.3);
+    border: none;
+    background-color: transparent;
+}
+
+.sort button:active {
+    color: #000000;
+}
+
+.sort button:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-list li {
+    list-style: none;
+}
+
+.catalog-item a {
+    color: #000000;
+}
+
+.catalog-item span {
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #464646; 
+}
+
+.catalog-item h3 {
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.pagination-list {
+    background-color: #dbdbdb;
+}
+
+.pagination-list li {
+    list-style: none;
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 24px;
+
+}
+
+.pagination-list a {
+    color: #000000;
+}
+
+.pagination-item-not-current a{
+    color: rgba(0, 0, 0, 0.3);
 }

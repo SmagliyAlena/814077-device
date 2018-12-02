@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
@@ -33,12 +33,12 @@
     	<ul class="breadcrumbs">
     		<li><a href="index.html">Главная</a></li>
     		<li><a href="catalog.html">Каталог товаров</a></li>
-    		<li class="breadcrumbs-current">Моноподы для селфи</li>
+    		<li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
     	</ul>
 
-    	<section>
+    	<section class="filter">
     		<h2>Фильтр:</h2>
-            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <form method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                     <legend>Стоимость</legend>
                     
@@ -85,12 +85,13 @@
             </form>
     		<!-- Здесь будет форма -->
     	</section>
-        <p>
+        <section class="sort">
            <h2>Сортировка</h2>
-            <button class="sort">По цене</button>
-            <button class="sort">По типу</button>
-            <button class="sort">По полулярности</button>
-        </p>
+            <button>По цене</button>
+            <button>По типу</button>
+            <button>По полулярности</button>
+       
+        </section>
     	<section>
     		<h2 class="visually-hidden">Список моноподов для селфи</h2>
 
@@ -157,8 +158,8 @@
     		<ul class="pagination-list">
     			<li class="pagination-item"><a href="#">Назад</a></li>
     			<li class="pagination-item pagination-item-current"><a>1</a></li>
-    			<li class="pagination-item"><a href="#">2</a></li>
-    			<li class="pagination-item"><a href="#">3</a></li>
+    			<li class="pagination-item pagination-item-not-current"><a href="#">2</a></li>
+    			<li class="pagination-item pagination-item-not-current"><a href="#">3</a></li>
     			<li class="pagination-item"><a href="#">Вперед</a></li>
     		</ul>
 	    </section>

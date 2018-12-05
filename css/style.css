@@ -10,7 +10,7 @@
     font-family: "OpenSans";
     src: url("../fonts/web/opensans.woff2") format("woff2"),
 	   url("../fonts/web/opensans.woff") format("woff");
-    font-weight: 800;
+    font-weight: 400;
     font-style: normal; 
 }
 @font-face {
@@ -40,21 +40,55 @@ body {
     color: #000000;
 }
 
-
-
 a {
     text-decoration: none;
 }
 
+.center-container {
+    width: 1160px
+    margin: 0 auto;
+    padding: 0 63px;
+}
+
 .main-header {
+    margin-bottom: 166px;
+
     font-size: 18px;
     line-height: 24px; 
     color: #000000;
+}
 
-    background-color: #f7e296;
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(to bottom, white 35%, #f7e184 35%);
+}
+
+.main-logo {
+    height: 36px;
+    color: #000000;
+    width: 164px;
+}
+
+.user-navigation-wrapper {
+    width: 100%;
+    margin-bottom: 54px;
+
+    background-color: #f7e184;
+}
+
+.user-navigation-wrapper .center-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .search-form {
+    width: 130px;
+    margin: 0;
+    padding: 0;
+
     font-size: 15px;
     line-height: 30px; 
     color: rgba(0, 0, 0, 0.3);
@@ -77,15 +111,19 @@ a {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.user-navigation,
-.site-navigation,
-.main-catalog-list {
+.user-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
 .user-navigation a {
     color: #000000;
-    font-family: "OpenSans";
+    font-family: "OpenSans", "Arial", Sans-serif;
     font-weight: 300;
     font-size: 15px;
     line-height: 30px;
@@ -99,7 +137,18 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.site-navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
 .site-navigation a {
+    margin: 10px;
+
     color: #000000;
     font-family: "Gilroy", "Arial", Sans-serif;
     font-weight: 800;
@@ -108,7 +157,7 @@ a {
 }
 
 .site-navigation a:hover {
-    opacity: 0;
+    opacity: 0.6;
 }
 
 .site-navigation a:active {
@@ -132,6 +181,7 @@ a {
 }
 
 .slider {
+
     background-color: #ffffff;
 }
 
@@ -162,6 +212,18 @@ a {
     letter-spacing: 3.7px;
 }
 
+.selfie-slider,
+.smart-watch-slider,
+.quadcopter-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+
 tr.data-table {
     color: #000000;
     font-family: "Gilroy", "Arial", Sans-serif;
@@ -180,9 +242,24 @@ tr.head-table {
     letter-spacing: 0.13px; 
 }
 
+.catalog-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
 .catalog-navigation li {
+    margin: 40px;
+
     list-style: none;
 }
+
+.catalog-navigation-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .catalog-navigation-list a {
     color: #000000;
@@ -200,6 +277,11 @@ tr.head-table {
 
 .catalog-navigation-list a:active {
     opacity: 0.3;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
 }
 
 .features-list button {
@@ -249,6 +331,14 @@ tr.head-table {
 
 .producers {
     opacity: 0.2;
+}
+
+.main-information {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 50px;
+    padding: 0;
 }
 
 .about-us h2 {
@@ -322,6 +412,9 @@ tr.head-table {
 }
 
 .main-footer {
+    display: flex;
+    justify-content: space-between;
+
     background-color: #464646;
 }
 
@@ -347,6 +440,14 @@ tr.head-table {
     letter-spacing: 3.6px;
 }
 
+.footer-features a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-features a:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .footer-navigation a {
     color: rgba(255, 255, 255, 0.7);
     font-family: "OpenSans", "Arial", Sans-serif;
@@ -354,6 +455,14 @@ tr.head-table {
     font-size: 15px;
     line-height: 36px;
     letter-spacing: 0.15px;
+}
+
+.footer-navigation a:hover {
+    color: #ffffff;
+}
+
+.footer-navigation a:active {
+    color: #ffffff;
 }
 
 .footer-phone {
@@ -482,6 +591,11 @@ form.filter fieldset {
     color: #000000;
 }
 
-.pagination-item-not-current a{
+.pagination-item:not(.pagination-item-current) a{
     color: rgba(0, 0, 0, 0.3);
+}
+
+li.pagination-item-back,
+li.pagination-item-forward {
+    color: #000000;
 }

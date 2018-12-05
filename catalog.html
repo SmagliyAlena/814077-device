@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
     <header class="main-header">
       <a href="index.html" class="main-logo">Device</a>
-         <!-- Здесь будет форма поиска -->
+         <form action="" method="get" class=search-form>
+             <input type="search" name="search-form" placeholder="Поиск по сайту">
+             <button type="submit">Найти</button>
+         </form>
          <ul class="user-navigation">
             <li><a href="login.html">Войти</a></li>
             <li><a href="compare.html">Сравнить</a></li>
@@ -87,9 +90,9 @@
     	</section>
         <section class="sort">
            <h2>Сортировка</h2>
-            <button>По цене</button>
-            <button>По типу</button>
-            <button>По полулярности</button>
+            <button><a href="price-up.html">По цене</a></button>
+            <button><a href="type-up.html">По типу</a></button>
+            <button><a href="popularity-up.html">По полулярности</a></button>
        
         </section>
     	<section>
@@ -156,11 +159,11 @@
     			</li>
     		</ul>
     		<ul class="pagination-list">
-    			<li class="pagination-item"><a href="#">Назад</a></li>
+    			<li class="pagination-item pagination-item-back"><a href="#">Назад</a></li>
     			<li class="pagination-item pagination-item-current"><a>1</a></li>
-    			<li class="pagination-item pagination-item-not-current"><a href="#">2</a></li>
-    			<li class="pagination-item pagination-item-not-current"><a href="#">3</a></li>
-    			<li class="pagination-item"><a href="#">Вперед</a></li>
+    			<li class="pagination-item"><a href="#">2</a></li>
+    			<li class="pagination-item"><a href="#">3</a></li>
+    			<li class="pagination-item pagination-item-forward"><a href="#">Вперед</a></li>
     		</ul>
 	    </section>
     </main>

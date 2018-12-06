@@ -47,10 +47,14 @@ a {
 .center-container {
     width: 1160px
     margin: 0 auto;
-    padding: 0 63px;
+    padding: 20px;
 }
 
 .main-header {
+    width: 1160px
+    margin: 0 auto;
+    padding: 0 20px;
+
     margin-bottom: 166px;
 
     font-size: 18px;
@@ -63,7 +67,7 @@ a {
     flex-direction: column;
     align-items: center;
 
-    background: linear-gradient(to bottom, white 35%, #f7e184 35%);
+    background: linear-gradient(to bottom, white 10%, #f7e184 10%);
 }
 
 .main-logo {
@@ -140,8 +144,11 @@ a {
 .site-navigation {
     display: flex;
     justify-content: space-around;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0px;
+    width: 1160px;
+
+    background-color: #f7e184;
 
     list-style: none;
 }
@@ -162,6 +169,23 @@ a {
 
 .site-navigation a:active {
     opacity: 0.3;
+}
+
+.main-catalog-list {
+    position: absolute;
+    top: 205px;
+    left: 60px;
+
+    display: none;
+
+    background-color: #f7e184;
+    list-style: none;
+
+}
+
+.site-navigation:hover .main-catalog-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-catalog-list a {
@@ -217,7 +241,7 @@ a {
 .quadcopter-slider {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     margin: 0;
     padding: 0;
@@ -411,7 +435,7 @@ tr.head-table {
     display: none;
 }
 
-.main-footer {
+.main-footer .center-container{
     display: flex;
     justify-content: space-between;
 
@@ -473,6 +497,28 @@ tr.head-table {
     line-height: 30px;
 }
 
+.page-title {
+    margin: 0;
+    margin-bottom: 29px;
+    padding: 0;
+
+    font-family: "Gilroy", "Arial", Sans-serif;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 48px; 
+    color: #000000;
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    width: 381px;
+
+}
+
 .breadcrumbs li {
     font-family: "OpenSans", "Arial", Sans-serif;
     font-weight: 300;
@@ -491,6 +537,10 @@ tr.head-table {
 
 .breadcrumbs a:active {
     color: rgba(0, 0, 0, 0.1);
+}
+
+.filter {
+    width: 468px;
 }
 
 .filter h2{
@@ -521,6 +571,10 @@ form.filter fieldset {
 }
 
 .sort {
+    display: flex;
+    justify-content: space-between;
+    width: 603px;
+
     background-color: #dbdbdb;
 }
 
@@ -550,8 +604,25 @@ form.filter fieldset {
     color: rgba(0, 0, 0, 0.6);
 }
 
-.catalog-list li {
+.catalog-columns {
+    display: flex;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-left: 72px;
+    margin-bottom: 62px;
+    padding: 0;
+
     list-style: none;
+}
+
+.catalog-item {
+    width: 360px;
+    margin-bottom: 126px;
+    margin-right: 40px;
 }
 
 .catalog-item a {
@@ -575,11 +646,15 @@ form.filter fieldset {
 }
 
 .pagination-list {
+    margin: 0;
+    padding: 0;
+
     background-color: #dbdbdb;
+    list-style: none;
 }
 
 .pagination-list li {
-    list-style: none;
+    
     font-family: "Gilroy", "Arial", Sans-serif;
     font-weight: 800;
     font-size: 17px;

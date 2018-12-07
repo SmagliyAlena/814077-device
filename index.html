@@ -7,6 +7,10 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
     <header class="main-header">
         <div class="center-container">
         <nav class="main-navigation">
@@ -60,101 +64,103 @@
     </header>
     
     <main class="">
-        <div class="slider"> 
-          <div class="center-container">
-              <div class="selfie-slider">
-                <div class="slider-image">
-                    <img src="img/selfie-stick-slider.jpg" alt="Палка для селфи" width="384" height="486">
-                </div>
-                <div class="slider-details">
-                    <b>
-                    Делай селфи, 
-                    <br>как Бен Стиллер!</b>
-                    <p>
-                        Самая длинная палка для селфи доступна в нашем магазине. 
-                    </p>
-                    <p>
-                       Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                    </p>
-               
-                    <table>
-                        <tr>
-                            <th><a href="selfie-stick-slider.html">Подробнее</a></th>
-                        </tr>
-                        <tr class="head-table">
-                            <td>Длина палки</td>
-                            <td>Вес палки</td>
-                            <td>Материал</td>
-                        </tr>
-                        <tr class="data-table">
-                           <td>8,5 м</td>
-                           <td>5 кг</td>
-                           <td>Карбон</td>
-                        </tr>
-                    </table>
-                </div>
+        <section class="slider">
+            <div class="slider-controls">
+                <label for="product-1">Первый</label>
+                <label for="product-2">Второй</label>
+                <label for="product-3">Третий</label>
+            </div>
+
+            <div class="slider-list"> 
+              <div class="center-container">    
+                <ul>
+                    <li class="slider-item slide" id="slide1">
+                        <div class="slider-image">
+                            <img src="img/selfie-stick-slider.jpg" alt="Палка для селфи" width="384" height="486">
+                        </div>
+                        <div class="slider-details">
+                            <b>
+                            Делай селфи, 
+                            <br>как Бен Стиллер!</b>
+                            <p>
+                                Самая длинная палка для селфи доступна в нашем магазине. 
+                            </p>
+                            <p>
+                               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                            </p>
+                       
+                            <table>
+                                <tr>
+                                    <th><a href="selfie-stick-slider.html">Подробнее</a></th>
+                                </tr>
+                                <tr class="head-table">
+                                    <td>Длина палки</td>
+                                    <td>Вес палки</td>
+                                    <td>Материал</td>
+                                </tr>
+                                <tr class="data-table">
+                                   <td>8,5 м</td>
+                                   <td>5 кг</td>
+                                   <td>Карбон</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+
+                    <li class="slider-item slide" id="slide2">
+                        <div class="slider-image">
+                            <img src="img/smart-watch-slider.jpg" alt="Умные часы" width="345" height="485">
+                        </div>
+                        <div class="slider-details">
+                            <b>Худеем <br>правильно!</b>
+                            <p>
+                                Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                            </p>
+                            <table>
+                               <tr>
+                                  <th><a href="smart-watch-slider.html">Подробнее</a></th>
+                                </tr>
+                                <tr class="head-table">
+                                   <td>Без подзарядки</td>
+                                </tr>
+                                <tr class="data-table">
+                                   <td>48 часов</td>
+                                </tr>
+                             </table>
+                        </div>
+                    </li>
+                    
+                    <li class="slider-item slide" id="slide">
+                        <div class="slider-image">
+                            <img src="img/quadcopter-slider.jpg" alt="Квадрокоптер" width="526" height="334">
+                        </div>
+                        <div class="slider-details">
+                            <b>Порхает как бабочка, жалит как пчела!</b>
+                            <p>
+                                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+
+                            </p>
+
+                             <table>
+                                <tr>
+                                    <th><a href="quadcopter-slider.html">Подробнее</a></th>
+                                </tr>
+                                <tr class="head-table">
+                                    <td>Дальность полета</td>
+                                    <td>Радиус поражения</td>
+                                </tr>
+                                <tr class="data-table">
+                                    <td>800 м</td>
+                                    <td>50 м</td>
+                                </tr>
+                             </table>
+                        </div>
+                    </li>
+                </ul>
               </div>
             </div>
-
-
-        <div class="center-container">
-          <div class="smart-watch-slider">
-            <div class="slider-image">
-                <img src="img/smart-watch-slider.jpg" alt="Умные часы" width="345" height="485">
-            </div>
-            <div class="slider-details">
-                 <b>Худеем <br>правильно!</b>
-                 <p>
-                    Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-                 </p>
-                 <table>
-                    <tr>
-                       <th><a href="smart-watch-slider.html">Подробнее</a></th>
-                    </tr>
-                    <tr class="head-table">
-                       <td>Без подзарядки</td>
-                    </tr>
-                    <tr class="data-table">
-                       <td>48 часов</td>
-                    </tr>
-                 </table>
-            </div>
-          </div>
-        </div>
-    
-        <div class="center-container">
-          <div class="quadcopter-slider">
-             <div class="slider-image">
-                <img src="img/quadcopter-slider.jpg" alt="Квадрокоптер" width="526" height="334">
-             </div>
-             <div class="slider-details">
-                <b>Порхает как бабочка, жалит как пчела!</b>
-                <p>
-                    Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-
-                </p>
-
-                 <table>
-                    <tr>
-                        <th><a href="quadcopter-slider.html">Подробнее</a></th>
-                    </tr>
-                    <tr class="head-table">
-                        <td>Дальность полета</td>
-                        <td>Радиус поражения</td>
-                    </tr>
-                    <tr class="data-table">
-                        <td>800 м</td>
-                        <td>50 м</td>
-                    </tr>
-                 </table>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-         
+        </section>
+  
       <nav class="catalog-navigation">
         <ul class="catalog-navigation-list">
             <li><a href="virtual-list.html">Виртуальная реальность</a></li>

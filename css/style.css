@@ -45,7 +45,7 @@ a {
 }
 
 .center-container {
-    width: 1160px
+    width: 1160px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -177,13 +177,13 @@ a {
     left: 60px;
 
     display: none;
-
+    z-index: 10;
     background-color: #f7e184;
     list-style: none;
 
 }
 
-.main-catalog-list:hover {
+.site-navigation-to-catalog:hover .main-catalog-list {
   display: flex;
   justify-content: space-between;
 }
@@ -206,15 +206,14 @@ a {
 
 .slider {
     position: relative;
-
-    padding-top: 228px;
 }
 
 .slider-list {
+    height: 530px;
     background-color: #ffffff;
 }
 
-.slide {
+.slider-item.slide {
     display: none;
 }
 
@@ -256,6 +255,27 @@ a {
     width: 1160px;
 }
 
+.more-info-container {
+    display: flex;
+    justify-content: space-between;   
+    width: 465px;
+    margin: 62px 0 76px 0;
+}
+
+
+.slider-image {
+    width: 385px;
+    margin-right: 125px;
+}
+
+.slider-details {
+    width: 502px;
+}
+
+
+.slider-details-text {
+    height: 76px;
+}
 
 tr.data-table {
     color: #000000;
@@ -264,6 +284,16 @@ tr.data-table {
     font-size: 36px;
     line-height: 48px;
     letter-spacing: 0.36px; 
+}
+
+.data-table > td,
+.head-table > td {
+    padding-right: 81px;
+}
+
+.data-table > td:last-child,
+.head-table > td:last-child {
+    padding-right: 0;
 }
 
 tr.head-table {
@@ -276,10 +306,10 @@ tr.head-table {
 }
 
 .slider-controls {
-    position: absolute;
+    /*position: absolute;
     top: 490px;
     left: 900px;
-    z-index: 20;
+    z-index: 20;*/
 
     font-size: 0;
 }
@@ -301,7 +331,7 @@ tr.head-table {
 #product-1:checked ~ .site-wrapper #slide1,
 #product-2:checked ~ .site-wrapper #slide2,
 #product-3:checked ~ .site-wrapper #slide3 {
-  display: block;
+  display: flex;
 }
 
 #product-1:checked ~ .site-wrapper label[for="product-1"],
@@ -670,7 +700,6 @@ form.filter fieldset {
 
 .catalog-item {
     width: 360px;
-    margin-bottom: 126px;
     margin-right: 40px;
 }
 

@@ -515,8 +515,6 @@ tr.head-table {
 .main-footer .center-container{
     display: flex;
     justify-content: space-between;
-
-    background-color: #464646;
 }
 
 .main-footer address {
@@ -530,6 +528,10 @@ tr.head-table {
 
 .main-footer li {
     list-style: none;
+}
+
+.main-footer {
+    background-color: #464646;
 }
 
 .footer-features a {

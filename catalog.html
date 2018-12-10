@@ -8,10 +8,10 @@
   </head>
   <body>
 
-    <header class="main-header">
+   <header class="main-header">
         <div class="center-container">
         <nav class="main-navigation">
-            <a class="main-logo">
+            <a href="index.html" class="main-logo">
                 <svg xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
                  width="5.786cm" height="1.27cm">
@@ -37,7 +37,8 @@
         </div>
          <nav class=""><!--Может назвать классы одинаково? -->
             <ul class="site-navigation">
-                <li><a href="catalog.html">Каталог товаров</a></li>
+                <li class="site-navigation-to-catalog">
+                    <a href="catalog.html">Каталог товаров</a>
                     <ul class="main-catalog-list">
                         <div class="menu-column-1">
                             <li><a href="">Виртуальная реальность</a></li>
@@ -52,6 +53,7 @@
                         <li><a href="">Квадрокоптеры</a></li>
                         </div>
                     </ul>
+                </li>
                 <li><a href="delivery.html">Доставка</a></li>
                 <li><a href="guarantee.html">Гарантия</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -62,18 +64,18 @@
     <div class="center-container">
     <main class="container">
     
-    	   <h1 class="page-title">Моноподы для селфи</h1>
+           <h1 class="page-title">Моноподы для селфи</h1>
         
 
-    	<ul class="breadcrumbs">
-    		<li><a href="index.html">Главная</a></li>
-    		<li><a href="catalog.html">Каталог товаров</a></li>
-    		<li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
-    	</ul>
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог товаров</a></li>
+            <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
+        </ul>
 <div class="catalog-columns">
     <div class="catalog-columns-1">
-    	<section class="filter">
-    		<h2>Фильтр:</h2>
+        <section class="filter">
+            <h2>Фильтр:</h2>
             <form method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                     <legend>Стоимость</legend>
@@ -119,8 +121,8 @@
                 </fieldset>
                 <button type="submit" class="filter-button button">Показать</button>
             </form>
-    		<!-- Здесь будет форма -->
-    	</section>
+            <!-- Здесь будет форма -->
+        </section>
     </div>
     <div class="catalog-columns-2">
      
@@ -132,79 +134,118 @@
        
         </section>
     
-    	<section>
-    		<h2 class="visually-hidden">Список моноподов для селфи</h2>
+        <section>
+            <h2 class="visually-hidden">Список моноподов для селфи</h2>
 
-    		<ul class="catalog-list">
-    			<li class="catalog-item">
-    				<h3>
-    					<a href="amateur-selfie-stick.html">
-    					    Любительская селфи-палка
-    				    </a>
-    				</h3>
-    				
-    				<a href="amateur-selfie-stick.html">
-    					<img src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
-    				</a>
-    				<span>500 руб.</span>
-    				<a class="button" href="#">В корзину</a>
-    			</li>
-
-    			<li class="catalog-item">
-    				<h3>
-                        <a href="professional-selfie-stick.html">
-    					    Профессиональная селфи-палка
+            <div class="catalog-list">
+                <div class="catalog-item">
+                    <div class="actions">
+                        <a class="cart" href="#">В корзину</a>
+                        <a class="compare" href="#">Добавить к сравнению</a>
+                    </div>
+                    <div class="product-image">
+                        <a href="amateur-selfie-stick.html">
+                            <img src="img/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
                         </a>
-                    </h3>
-    				
-                         <a href="professional-selfie-stick.html">
-    						<img src="img/professional-selfie-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-    					</a>
-    				
-    				<span>1 500 руб.</span>
-    				<a class="button" href="#">В корзину</a>
-    			</li>
-
-    			<li class="catalog-item">
-    				<h3>
-    					<a href="unsinkable-selfie-stick.html">
-    					    Непотопляемая селфи-палка
-    				    </a>
-    				</h3>
-    				
-    					<a href="unsinkable-selfie-stick.html">
-    						<img src="img/unsinkable-selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-    					</a>
-    				
-    				<span>2 500 руб.</span>
-    				<a class="button" href="#">В корзину</a>
-    			</li>
-
-    			<li class="catalog-item">
-    				<h3>
-    					<a href="selfie-stick-follow-me.html">
-    					    Селфи-палка «Следуй за мной»
-    				    </a>
-    				</h3>
-    				
-    					<a href="selfie-stick-follow-me.html">
-    						<img src="img/selfie-stick-follow-me.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-    					</a>
-    				
-    				<span>4 900 руб.</span>
-    				<a class="button" href="#">В корзину</a>
-    			</li>
-    		</ul>
-    		<ul class="pagination-list">
-    			<li class="pagination-item pagination-item-back"><a href="#">Назад</a></li>
-                <div class="center-pagination">
-        			<li class="pagination-item pagination-item-current"><a>1</a></li>
-        			<li class="pagination-item"><a href="#">2</a></li>
-        			<li class="pagination-item"><a href="#">3</a></li>
+                    </div>
+                    <div class="product-details">
+                        <div class="title">
+                            <h3>
+                                <a href="amateur-selfie-stick.html">Любительская селфи-палка</a>
+                            </h3>
+                        </div>
+                        <div class="price">
+                            <span>500 руб.</span>
+                        </div>
+                    </div>
                 </div>
-    			<li class="pagination-item pagination-item-forward"><a href="#">Вперед</a></li>
-    		</ul>
-	    </section>
+
+                <div class="catalog-item">
+                    <div class="actions">
+                        <a class="cart" href="#">В корзину</a>
+                        <a class="compare" href="#">Добавить к сравнению</a>
+                    </div>
+                    <div class="product-image">
+                        <a href="professional-selfie-stick.html">
+                            <img src="img/professional-selfie-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                        </a>
+                    </div>
+                    <div class="product-details">
+                        <div class="title">
+                            <h3>
+                                <a href="professional-selfie-stick.html">Профессиональная селфи-палка
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="price">
+                            <span>1 500 руб.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="actions">
+                        <a class="cart" href="#">В корзину</a>
+                        <a class="compare" href="#">Добавить к сравнению</a>
+                    </div>
+                    <div class="product-image">
+                        <a href="unsinkable-selfie-stick.html">
+                            <img src="img/unsinkable-selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                        </a>
+                    </div>
+                    <div class="product-details">
+                        <div class="title">
+                            <h3>
+                                <a href="unsinkable-selfie-stick.html">Непотопляемая селфи-палка
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="price">
+                            <span>2 500 руб.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="actions">
+                        <a class="cart" href="#">В корзину</a>
+                        <a class="compare" href="#">Добавить к сравнению</a>
+                    </div>
+                    <div class="product-image">
+                        <a href="selfie-stick-follow-me.html">
+                            <img src="img/selfie-stick-follow-me.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                        </a>
+                    </div>
+                    <div class="product-details">
+                        <div class="title">
+                            <h3>
+                               <a href="selfie-stick-follow-me.html">Селфи-палка «Следуй за мной»
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="price">
+                            <span>4 900 руб.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+                
+
+
+
+
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-back"><a href="#">Назад</a></li>
+                <div class="center-pagination">
+                    <li class="pagination-item pagination-item-current"><a>1</a></li>
+                    <li class="pagination-item"><a href="#">2</a></li>
+                    <li class="pagination-item"><a href="#">3</a></li>
+                </div>
+                <li class="pagination-item pagination-item-forward"><a href="#">Вперед</a></li>
+            </ul>
+        </section>
     </div>
 </div>
     </main>

@@ -53,7 +53,7 @@ a {
 .main-header {
     width: 1160px
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
 
     margin-bottom: 166px;
 
@@ -86,6 +86,24 @@ a {
     margin-bottom: 50px;
 }
 
+form.search-form {
+    position: relative;
+}
+
+form.search-form::before {
+    position: absolute;
+    top: 15px;
+    left: 6px;
+    
+    content: "";
+    width: 16px;
+    height: 16px;
+
+    background-image: url(../img/svg/search.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
 .search-form {
     display: flex;
     width: 437px;
@@ -93,6 +111,7 @@ a {
     margin: 0;
     margin-right: 100px;
     padding: 0;
+    padding-left: 36px;
 
     font-size: 15px;
     line-height: 30px; 
@@ -103,6 +122,7 @@ a {
 
 .search-form input {
     width: 356px;
+    padding: 0;
 
     background-color: transparent;
     outline: none;
@@ -168,6 +188,40 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.user-navigation .login,
+.user-navigation .compare,
+.user-navigation .cart {
+    position: relative;
+
+    padding-right: 28px;
+}
+
+.user-navigation .login::before,
+.user-navigation .compare::before,
+.user-navigation .cart::before {
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    content: "";
+
+    width: 13px;
+    height: 12px;
+
+    background-image: url(../img/svg/search.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.user-navigation .login::before {
+    background-image: url(../img/svg/user.svg);
+}
+.user-navigation .compare::before {
+    background-image: url(../img/svg/compare.svg);
+}
+.user-navigation .cart::before {
+    background-image: url(../img/svg/cart.svg);
+}
+
 .site-navigation {
     position: relative;
 
@@ -181,6 +235,27 @@ a {
     background-color: #f7e184;
 
     list-style: none;
+}
+
+.site-navigation-to-catalog {
+    position: relative;
+
+    padding-right: 32px;
+}
+
+.site-navigation-to-catalog::before {
+    position: absolute;
+    top: 4px;
+    right: 13px;
+    
+    content: "";
+    width: 16px;
+    height: 16px;
+
+    background-image: url(../img/svg/plus.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0.3;
 }
 
 .site-navigation a {
@@ -206,7 +281,7 @@ a {
 .main-catalog-list {
     position: absolute;
     top: 40px;
-    left: 0px;
+    left: -58px;
 
     display: none;
     width: 1120px;
@@ -787,6 +862,41 @@ ul.social-buttons {
 
 }
 
+.footer-navigation .login,
+.footer-navigation .compare,
+.footer-navigation .cart {
+    position: relative;
+
+    padding-right: 28px;
+}
+
+.footer-navigation .login::before,
+.footer-navigation .compare::before,
+.footer-navigation .cart::before {
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    content: "";
+
+    width: 13px;
+    height: 12px;
+
+    background-image: url(../img/svg/search.svg);
+    fill: #ffffff;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.footer-navigation .login::before {
+    background-image: url(../img/svg/user.svg);
+}
+.footer-navigation .compare::before {
+    background-image: url(../img/svg/compare.svg);
+}
+.footer-navigation .cart::before {
+    background-image: url(../img/svg/cart.svg);
+}
+
 .footer-navigation a {
     color: rgba(255, 255, 255, 0.7);
     font-family: "OpenSans", "Arial", Sans-serif;
@@ -1137,16 +1247,16 @@ ul.social-buttons {
     z-index: 20;
 }
 
-.cart {
+.actions .cart {
     background: linear-gradient(to bottom, transparent 30%, #f0c52e 30%, #f0c52e 70%, transparent 70%);
 } 
 
-.cart:hover {
+.actions .cart:hover {
     background-color: #f0c52e;
     transition: color 200ms;
 }
 
-.cart:active {
+.actions .cart:active {
     background-color: #f0c52e;
     color: rgba(0, 0, 0, 0.3);
 }

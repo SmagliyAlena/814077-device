@@ -11,10 +11,17 @@
         <div class="center-container">
             <nav class="main-navigation">
                 <a href="" class="main-logo">
-                    <img src="img/device-logo.svg" width="163" height="35" alt="DEVICE">
+                    <svg  xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="163px" height="35px">
+                    <path fill-rule="evenodd"
+                    d="M163.881,27.119 L163.881,34.511 L142.617,34.511 L142.617,0.911 L163.640,0.911 L163.640,8.303 L150.349,8.303 L150.349,13.871 L162.431,13.871 L162.431,21.167 L150.349,21.167 L150.349,27.119 L163.881,27.119 ZM124.010,27.695 C125.717,27.695 127.272,27.327 128.674,26.591 C130.075,25.855 131.130,24.847 131.839,23.567 L138.509,27.406 C137.059,29.807 135.045,31.703 132.468,33.095 C129.889,34.487 127.071,35.183 124.010,35.183 C118.951,35.183 114.755,33.511 111.421,30.167 C108.086,26.823 106.419,22.671 106.419,17.711 C106.419,12.751 108.086,8.599 111.421,5.255 C114.755,1.911 118.951,0.239 124.010,0.239 C127.038,0.239 129.841,0.935 132.419,2.327 C134.997,3.719 137.026,5.615 138.509,8.014 L131.839,11.855 C131.098,10.543 130.034,9.527 128.650,8.806 C127.264,8.087 125.717,7.727 124.010,7.727 C121.014,7.727 118.621,8.639 116.833,10.463 C115.045,12.287 114.151,14.703 114.151,17.711 C114.151,20.719 115.045,23.135 116.833,24.959 C118.621,26.783 121.014,27.695 124.010,27.695 ZM93.853,0.911 L101.585,0.911 L101.585,34.511 L93.853,34.511 L93.853,0.911 ZM69.593,34.511 L58.574,0.911 L67.031,0.911 L74.522,25.631 L82.013,0.911 L90.471,0.911 L79.452,34.511 L69.593,34.511 ZM35.376,0.911 L56.399,0.911 L56.399,8.303 L43.109,8.303 L43.109,13.871 L55.191,13.871 L55.191,21.167 L43.109,21.167 L43.109,27.119 L56.641,27.119 L56.641,34.511 L35.376,34.511 L35.376,0.911 ZM14.112,34.511 L0.580,34.511 L0.580,0.911 L14.112,0.911 C18.783,0.911 22.690,2.519 25.832,5.735 C28.973,8.951 30.544,12.943 30.544,17.711 C30.544,22.479 28.973,26.471 25.832,29.687 C22.690,32.902 18.783,34.511 14.112,34.511 ZM20.612,10.871 C18.952,9.159 16.786,8.303 14.112,8.303 L8.313,8.303 L8.313,27.119 L14.112,27.119 C16.786,27.119 18.952,26.263 20.612,24.551 C22.271,22.839 23.101,20.559 23.101,17.711 C23.101,14.863 22.271,12.583 20.612,10.871 Z"/>
+                    </svg>
                 </a>
+
+
                 <div class="first-line-menu">       
-                    <div class="search-form">
+                    <div>
                         <form action="" method="get" class="search-form">
                             <input type="search" class="search-form-input" name="search-form" placeholder="Поиск по сайту">
                             <button class="search-form-submit" type="submit">Найти</button>
@@ -22,10 +29,14 @@
                     </div>
                     <ul class="user-navigation">
                         <li><a href="login.html" class="login">Войти</a></li>
+                    </ul>
+                    <ul class="customer-navigation">
                         <li><a href="compare.html" class="compare">Сравнить</a></li>
                         <li><a href="cart.html" class="cart">Корзина</a></li>
                     </ul>
                 </div>
+
+
                 <ul class="site-navigation">
                     <li class="site-navigation-to-catalog">
                         <a href="catalog.html">Каталог товаров</a>
@@ -57,13 +68,13 @@
     <input class="visually-hidden" type="radio" id="product-2" name="toggle">
     <input class="visually-hidden" type="radio" id="product-3" name="toggle">
     <main class="site-wrapper">
+        <div class="center-container">
         <section class="slider">
             <div class="slider-list"> 
-              <div class="center-container">    
-                <ul>
+                <ul class="slider-list">
                     <li class="slider-item slide" id="slide1">
                         <div class="slider-image">
-                            <img src="img/selfie-stick-slider.jpg" width="384" height="486" alt="Палка для селфи" >
+                            <img src="img/selfie-stick-slider.png" width="384" height="486" alt="Палка для селфи" >
                         </div>
                         <div class="slider-details">
                             <b>
@@ -78,7 +89,9 @@
                                 </p>
                             </div>
                             <div class="more-info-container">
-                                <a href="selfie-stick-slider.html">Подробнее</a>
+                                <a class="more-info-button" href="selfie-stick-slider.html">
+                                    Подробнее
+                                </a>
                                 <div class="slider-controls">
                                     <label for="product-1">Первый</label>
                                     <label for="product-2">Второй</label>
@@ -86,15 +99,15 @@
                                 </div>
                             </div>
                             <table>
-                                <tr class="head-table">
-                                    <td>Длина палки</td>
-                                    <td>Вес палки</td>
-                                    <td>Материал</td>
-                                </tr>
                                 <tr class="data-table">
                                    <td>8,5 м</td>
                                    <td>5 кг</td>
                                    <td>Карбон</td>
+                                </tr>
+                                <tr class="head-table">
+                                    <td>Длина палки</td>
+                                    <td>Вес палки</td>
+                                    <td>Материал</td>
                                 </tr>
                             </table>
                         </div>
@@ -102,7 +115,7 @@
 
                     <li class="slider-item slide" id="slide2">
                         <div class="slider-image">
-                            <img src="img/smart-watch-slider.jpg" width="345" height="485" alt="Умные часы">
+                            <img src="img/smart-watch-slider.png" width="345" height="485" alt="Умные часы">
                         </div>
                         <div class="slider-details">
                             <b>Худеем <br>правильно!</b>
@@ -110,7 +123,7 @@
                                 Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                             </p>
                             <div class="more-info-container">
-                                <a href="smart-watch-slider.html">Подробнее</a>
+                                <a class="more-info-button" href="smart-watch-slider.html">Подробнее</a>
                                 <div class="slider-controls">
                                     <label for="product-1">Первый</label>
                                     <label for="product-2">Второй</label>
@@ -118,11 +131,11 @@
                                 </div>
                             </div>
                             <table>
-                                <tr class="head-table">
-                                   <td>Без подзарядки</td>
-                                </tr>
                                 <tr class="data-table">
                                    <td>48 часов</td>
+                                </tr>
+                                <tr class="head-table">
+                                   <td>Без подзарядки</td>
                                 </tr>
                              </table>
                         </div>
@@ -130,7 +143,7 @@
                     
                     <li class="slider-item slide" id="slide3">
                         <div class="slider-image">
-                            <img src="img/quadcopter-slider.jpg" width="526" height="334" alt="Квадрокоптер">
+                            <img src="img/quadcopter-slider.png" width="526" height="334" alt="Квадрокоптер">
                         </div>
                         <div class="slider-details">
                             <b>Порхает как бабочка, жалит как пчела!</b>
@@ -139,7 +152,7 @@
 
                             </p>
                             <div class="more-info-container">
-                                <a href="quadcopter-slider.html">Подробнее</a>  
+                                <a class="more-info-button" href="quadcopter-slider.html">Подробнее</a>  
                                 <div class="slider-controls">
                                     <label for="product-1">Первый</label>
                                     <label for="product-2">Второй</label>
@@ -147,21 +160,21 @@
                                 </div>
                             </div>
                             <table>
-                                <tr class="head-table">
-                                    <td>Дальность полета</td>
-                                    <td>Радиус поражения</td>
-                                </tr>
                                 <tr class="data-table">
                                     <td>800 м</td>
                                     <td>50 м</td>
+                                </tr>
+                                <tr class="head-table">
+                                    <td>Дальность полета</td>
+                                    <td>Радиус поражения</td>
                                 </tr>
                             </table>
                         </div>
                     </li>
                 </ul>
               </div>
-            </div>
         </section>
+        </div>
   <div class="center-container">
       <nav class="catalog-navigation">
         <ul class="catalog-navigation-list">
@@ -174,49 +187,50 @@
          </ul>
       </nav>
   </div>
-      <section class="features">
 
-        <h2 class="visually-hidden">Преимущества</h2>
-            <div class="features-list">
-                <button class="btn delivery-button">Доставка</button>
-                <!-- в лекции использовался пример с btn, но в критериях просят развернутые названия. Какой вариант верный? -->
-                <button class="btn guarantee-button">Гарантия</button>
-                <button class="btn credit-button">Кредит</button>
-            </div>
-        <ul class="features-list">
-            <li class="feature-item">
-                <h3>Доставка</h3>
-                <p>
-                    Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-                </p>
-            </li>
+    <section class="services">
+        <div class="center-container">
+        <div class="container">
+            
+              <h2 class="visually-hidden">Сервисы</h2>
 
-            <li class="feature-item">
-                <h3>Гарантия</h3>
-                    <p>
-                        Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                    </p>
-                    <p>
-                        Товар, не дом, конечно же.
-                    </p>
-            </li>
+              <input class="visually-hidden" type="radio" id="service-1" name="services-toggle" checked="checked">
+              <input class="visually-hidden" type="radio" id="service-2" name="services-toggle">
+              <input class="visually-hidden" type="radio" id="service-3" name="services-toggle">
 
-            <li class="feature-item">
-                <h3>Кредит</h3>
-                <p>
-                   Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется. 
-                </p>
-            </li>
+              <div class="service-controls">
+                <label class="button service-controls-item service-controls-item-1" for="service-1">Доставка</label>
+                <label class="button service-controls-item service-controls-item-2" for="service-2">Гарантия</label>
+                <label class="button service-controls-item service-controls-item-3" for="service-3">Кредит</label>
+              </div>
 
-        </ul>
-       </section>
-
+              <ul class="service-list">
+                <li class="service-item">
+                  <h3>Доставка</h3>
+                  <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </li>
+                <li class="service-item">
+                  <h3>Гарантия</h3>
+                  <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
+                    Товар, не дом, конечно же.</p>
+                </li>
+                <li class="service-item">
+                  <h3>Кредит</h3>
+                  <p>Залезть в долговую яму стало проще! Кредитные<br>
+                    консультанты подберут для вас наиболее выгодные<br>
+                    условия кредита. Выгодные для нашего банка, разумеется.</p>
+                </li>
+              </ul>
+        
+        </div> 
+        </div> 
+      </section>
         <div class="center-container">
             <div class="producers">
-                <a><img src="img/partner-logo-dji.jpg"width="260" height="100" alt="DJI" ></a>
-                <a><img src="img/partner-logo-sp-gadgets.jpg" width="260" height="100" alt="Sp Gadgets"></a>
-                <a><img src="img/partner-logo-gopro.jpg" width="260" height="100" alt="GoPro"></a>
-                <a><img src="img/partner-logo-vive.jpg" width="260" height="100" alt="Vive"></a>            
+                <div class="producer-item"><a><img src="img/partner-logo-dji.jpg" width="260" height="100" alt="DJI"></a></div>
+                <div class="producer-item"><a><img src="img/partner-logo-sp-gadgets.jpg" width="260" height="100" alt="Sp Gadgets"></a></div>
+                <div class="producer-item"><a><img src="img/partner-logo-gopro.jpg" width="260" height="100" alt="GoPro"></a></div>
+                <div class="producer-item"><a><img src="img/partner-logo-vive.jpg" width="260" height="100" alt="Vive"></a></div>
             </div>
         </div>
 
@@ -227,29 +241,31 @@
         <section class="about-us">
 
             <h2>О нас</h2>
-            <p>
-                Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-            </p>
-            <p>
-                Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
-            </p>
-            <ul class="transport-companies">
-                <li>Деловые Линии</li>
-                <li>Автотрейдинг</li>
-                <li>ЖелДорЭкспедиция</li>
-            </ul>
-            <a class="about-us-btn" href="about-us.html">Подробнее о нас</a>
+            <div class="add-information">
+                <p>
+                    Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+                </p>
+                <p>
+                    Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+                </p>
+                <ul class="transport-companies">
+                    <li>Деловые Линии</li>
+                    <li>Автотрейдинг</li>
+                    <li>ЖелДорЭкспедиция</li>
+                </ul>
+            </div>
+            <a class="more-info-button about-us-btns" href="about-us.html">Подробнее о нас</a>
          </section>
 
          <section class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы можете проверить работоспособность покупки. Всякое бывает.</p>
             <!-- форма с картой -->
-            <a href="img/index-map-big.jpg"><img src="img/index-map.jpg"></a>
-            <img class="hidden" src="img/index-map-big.jpg">
+            <a href="img/index-map-big.jpg" class="contacts-map"><img src="img/index-map.jpg"></a>
+            <img class="visually-hidden" src="img/index-map-big.jpg">
 
             <p>
-                <a href="" class="write-button">Напишите нам</a>
+                <a href="#" class="more-info-button about-us-btns contacts-link">Напишите нам</a>
             </p>
             <form action="/echo" method="post" class="hidden">
                 <p>
@@ -327,6 +343,39 @@
     </div>
 
     </footer>
-      
+
+    <section class="modal modal-letter">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="letter-item">
+          <label for="letter-name">Ваше имя:</label>
+          <input id="letter-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="letter-item">
+          <label for="letter-mail">Ваш e-mail:</label>
+          <input id="letter-mail" type="email" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p class="letter-item">
+          <label for="letter-comment">Текст письма:</label>
+          <textarea id="letter-comment" name="comment" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779985!2d37.52742931625744!3d55.6870309805358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1542976476379"></iframe>
+      <p>
+        <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+
+    <script src="js/script.js"></script>  
+
   </body>
 </html>

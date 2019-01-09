@@ -115,9 +115,12 @@ form.search-form::before {
     width: 437px;
     min-height: 49px;
     margin: 0;
+    margin-top: 5px;
+    margin-left: 1px;
     margin-right: 100px;
     padding: 0;
     padding-left: 36px;
+
 
     font-size: 15px;
     line-height: 30px; 
@@ -129,6 +132,9 @@ form.search-form::before {
 .search-form input {
     width: 356px;
     padding: 0;
+
+
+    margin-left: 3px;
 
     background-color: transparent;
     outline: none;

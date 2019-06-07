@@ -1314,6 +1314,11 @@ ul.social-buttons {
     padding-right: 28px;
 }
 
+.footer-navigation > li
+{
+  margin-left: 15px;
+}
+
 .footer-navigation .login::before,
 .footer-navigation .compare::before,
 .footer-navigation .cart::before {
